@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const TransactionHistoryTable = styled.table`
   width: 60%;
-  margin: 0 auto;
+  margin: 20px auto;
   box-shadow: rgba(0, 0, 0, 0.75) 3px 4px 8px -1px;
   border-collapse: collapse;
 `;
