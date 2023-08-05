@@ -1,13 +1,23 @@
+import {
+  FriendListWrapper,
+  FriendListItem,
+  FriendStatus,
+  FriendImage,
+  FriendName,
+} from './FriendList.styled';
+
 export const FriendList = ({ friends }) => {
   return (
-    <ul>
+    <FriendListWrapper>
       {friends.map(({ avatar, name, isOnline, id }) => (
-        <li key={id}>
-          <span>{isOnline}</span>
-          <img src={avatar} alt={name} width="48" />
-          <p>{name}</p>
-        </li>
+        <FriendListItem key={id}>
+          <FriendStatus
+            style={{ backgroundColor: isOnline ? 'green' : 'red' }}
+          ></FriendStatus>
+          <FriendImage src={avatar} alt={name} width="48" />
+          <FriendName>{name}</FriendName>
+        </FriendListItem>
       ))}
-    </ul>
+    </FriendListWrapper>
   );
 };
