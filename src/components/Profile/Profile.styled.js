@@ -55,7 +55,7 @@ export const StatData = styled.ul`
   text-align: center;
   justify-content: center;
   width: 100%;
-  padding: 20px;
+  padding: 20px 0;
   column-gap: 40px;
   background-color: #7fffd4;
 `;

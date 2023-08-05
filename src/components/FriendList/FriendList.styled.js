@@ -1,4 +1,3 @@
-import { findByLabelText } from '@testing-library/react';
 import styled from 'styled-components';
 
 export const FriendListWrapper = styled.ul`
@@ -40,4 +39,6 @@ export const FriendImage = styled.img`
 export const FriendName = styled.p`
   display: flex;
   justify-content: start;
+  font-size: 20px;
+  font-weight: 500;
 `;
